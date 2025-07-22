@@ -1,0 +1,27 @@
+# Application image
+image:
+  repository: mikekravchenko/flask-app
+  tag: latest
+  pullPolicy: IfNotPresent
+
+# Application port
+service:
+  type: ClusterIP # Change to LoadBalancer for external access
+  port: 5000
+  targetPort: 5000
+
+# Replica count
+replicaCount: 1
+
+# Resource limits
+resources:
+  limits:
+    cpu: 500m
+    memory: 256Mi
+  requests:
+    cpu: 250m
+    memory: 128Mi
+
+# Kubernetes labels
+labels:
+  app: flask-app
