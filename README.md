@@ -18,16 +18,6 @@ A simple Python application (`app.py`) that serves a basic HTML page with Docker
   - Ensure the web service is publicly accessible.
   - Include any required networking resources (e.g., VPC, subnets, load balancers).
 
-### 5. Documentation
-
-Update this `README.md` with the following:
-
-- **Deployment Instructions:** Step-by-step instructions to build, deploy, and test the application.
-- **Answer the following questions:**
-
-  1. How would you create a CI/CD pipeline to automate code quality analysis and deployment success?
-  2. How would you perform rollbacks?
-
 ## Usage:
 
 ### Docker, build and deploy
